@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Within</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- How to add a image at the tab icon -->
+    <link rel="icon" href="/Images/Screenshot 2025-01-22 114745-modified.png" type="image/png"> 
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">Wellness within</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div><br><br><br><br><br>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Home</span>
+            </a>
+             <span class="tooltip">Home</span>
+          </li>
+          <li>
+           <a href="about.html">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">About</span>
+           </a>
+           <span class="tooltip">About</span>
+         </li>
+         <li>
+           <a href="issues.html">
+             <i class='bx bx-folder' ></i>
+             <span class="links_name">Issues Faced</span>
+           </a>
+           <span class="tooltip">Issues Faced</span>
+         </li>
+         <li>
+           <a href="overcome.html">
+             <i class='bx bx-pie-chart-alt-2' ></i>
+             <span class="links_name">How To Overcome It</span>
+           </a>
+           <span class="tooltip">How To Overcome It</span>
+         </li>
+         <li>
+           <a href="talk.html">
+             <i class='bx bx-chat' ></i>
+             <span class="links_name">Need To Talk</span>
+           </a>
+           <span class="tooltip">Need To Talk</span>
+         </li>
+        </ul>
+      </div>
+      <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();  
+      });
+      searchBtn.addEventListener("click", ()=>{ 
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+      });
+      function menuBtnChange() {
+       if(sidebar.classList.contains("open")){
+         closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+       }else {
+         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+       }
+      }
+      </script> 
+
+      <section class="home">
+        <!-- home page -->
+<section class="home">
+  <div class="left-side">
+    <center>
+      <h1 style="margin-top: 35%; font-size: 50px;">Welcome to Wellness Within</h1>
+      <a href="about.html" class="homeButton" >Lets Get Started</a>
+
+    </center>
+  </div>
+  <div class="right-side"></div>
+</section>
+<style>
+  .home {
+      display: flex;
+      height: 100vh;
+  }
+  .left-side {
+      background-color: white;
+      width: 700px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-left: 80px;
+  }
+  .right-side {
+      background-image: url('https://img.freepik.com/free-vector/boy-mental-health-with-flowers_603843-975.jpg');
+      background-size: contain;
+      width: 700px;
+      background-attachment: fixed;
+  }
+  .banner img {
+      width: 100%;
+      height: auto;
+  }
+  .homeButton {
+      background-color: #A0C878; 
+      border-radius: 25px; 
+      text-decoration: none;
+      padding: 10px 20px; 
+      color: white; 
+      font-size: 18px; 
+      transition: background-color 0.3s; 
+  }
+  .homeButton:hover {
+      background-color: #7BAF6A;}
+
+</style>
+      </section>
+
+      <section class="content" style="height: 50vh;">
+        <div></div>
+      </section>
+      <style>
+        .content{
+          background: #A0C878;
+        }
+      </style>
+</body>
+</html>

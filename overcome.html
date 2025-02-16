@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Within - About Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">Wellness within - How to Overcome it</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div><br><br><br><br><br>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Home</span>
+            </a>
+             <span class="tooltip">Home</span>
+          </li>
+          <li>
+           <a href="about.html">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">About</span>
+           </a>
+           <span class="tooltip">About</span>
+         </li>
+         <li>
+           <a href="issues.html">
+             <i class='bx bx-folder' ></i>
+             <span class="links_name">Issues Faced</span>
+           </a>
+           <span class="tooltip">Issues Faced</span>
+         </li>
+         <li>
+           <a href="overcome.html">
+             <i class='bx bx-pie-chart-alt-2' ></i>
+             <span class="links_name">How To Overcome It</span>
+           </a>
+           <span class="tooltip">How To Overcome It</span>
+         </li>
+         <li>
+           <a href="talk.html">
+             <i class='bx bx-chat' ></i>
+             <span class="links_name">Need To Talk</span>
+           </a>
+           <span class="tooltip">Need To Talk</span>
+         </li>
+        </ul>
+      </div>
+      <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+      });
+      searchBtn.addEventListener("click", ()=>{ 
+        sidebar.classList.toggle("open");
+        menuBtnChange(); 
+      });
+      function menuBtnChange() {
+       if(sidebar.classList.contains("open")){
+         closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+       }else {
+         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+       }
+      }
+      </script> 
+
+      <!-- How to overcome it page -->
+      <center> 
+      <section class="overcome" style="height: 100vh;">
+        
+      </section>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Within - About Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">Wellness within - Issues Faced</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div><br><br><br><br><br>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Home</span>
+            </a>
+             <span class="tooltip">Home</span>
+          </li>
+          <li>
+           <a href="about.html">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">About</span>
+           </a>
+           <span class="tooltip">About</span>
+         </li>
+         <li>
+           <a href="issues.html">
+             <i class='bx bx-folder' ></i>
+             <span class="links_name">Issues Faced</span>
+           </a>
+           <span class="tooltip">Issues Faced</span>
+         </li>
+         <li>
+           <a href="overcome.html">
+             <i class='bx bx-pie-chart-alt-2' ></i>
+             <span class="links_name">How To Overcome It</span>
+           </a>
+           <span class="tooltip">How To Overcome It</span>
+         </li>
+         <li>
+           <a href="talk.html">
+             <i class='bx bx-chat' ></i>
+             <span class="links_name">Need To Talk</span>
+           </a>
+           <span class="tooltip">Need To Talk</span>
+         </li>
+        </ul>
+      </div>
+      <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+      });
+      searchBtn.addEventListener("click", ()=>{ 
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+      });
+      function menuBtnChange() {
+       if(sidebar.classList.contains("open")){
+         closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+       }else {
+         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+       }
+      }
+      </script> 
+
+      <!-- Issues Faced page -->
+
+       <center>
+        <div class="banner">
+          <br><br><br><br><br>
+          <h1>Want to overcome the wellbeing challanges?</h1>
+        </div><br><br>
+       <section class="issues">
+        <div class="content" style="width: 50%;">
+        <h2>Overcoming Challenges</h2>
+        <div class="challenge-container">
+          <div class="challenge">
+            <span class="challenge-title">Anxiety</span>
+            <span class="plus-sign" onclick="showPopup('anxiety')">+</span>
+          </div>
+          <div class="challenge">
+            <span class="challenge-title">Depression</span>
+            <span class="plus-sign" onclick="showPopup('depression')">+</span>
+          </div>
+          <div class="challenge">
+            <span class="challenge-title">Trauma</span>
+            <span class="plus-sign" onclick="showPopup('trauma')">+</span>
+          </div>
+        </div>
+        <div class="popup-container">
+          <div class="popup" id="anxiety">
+            <p>Anxiety is a common mental health disorder characterized by feelings of worry, anxiety, or fear that are strong enough to interfere with one's daily activities.</p>
+            <span class="close-popup" onclick="closePopup('anxiety')">X</span>
+          </div>
+          <div class="popup" id="depression">
+            <p>Depression is a mood disorder that causes a persistent feeling of sadness and loss of interest. It affects how you feel, think, and behave and can lead to a variety of emotional and physical problems.</p>
+            <span class="close-popup" onclick="closePopup('depression')">X</span>
+          </div>
+          <div class="popup" id="trauma">
+            <p>Trauma is a deeply distressing or disturbing experience that can have long-lasting effects on a person's mental, emotional, and physical well-being.</p>
+            <span class="close-popup" onclick="closePopup('trauma')">X</span>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam repudiandae ea minus ducimus labore! Doloribus adipisci explicabo necessitatibus animi doloremque. Aut rem, nobis dolor repudiandae illum aspernatur distinctio magni earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corporis quidem, sapiente animi voluptatibus eum. Maiores harum alias suscipit culpa commodi perferendis error sequi? Nostrum tempora ab iste est odit.</p>
+    </center>
+        <script>
+          function showPopup(id) {
+            document.getElementById(id).style.display = 'block';
+          }
+          function closePopup(id) {
+            document.getElementById(id).style.display = 'none';
+          }
+        </script>
+
+        <style>
+          .challenge-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+          .challenge {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .challenge-title {
+            font-weight: bold;
+          }
+          .plus-sign {
+            cursor: pointer;
+          }
+          .popup-container {
+            position: relative;
+          }
+          .popup {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin-left: 70px;
+          }
+          .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+          }
+        </style>
+       </section>
+       </center>
+</body>
+</html>
