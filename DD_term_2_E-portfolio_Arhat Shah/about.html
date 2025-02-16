@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Within - About Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">Wellness within</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div><br><br><br><br><br>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Home</span>
+            </a>
+             <span class="tooltip">Home</span>
+          </li>
+          <li>
+           <a href="about.html">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">About</span>
+           </a>
+           <span class="tooltip">About</span>
+         </li>
+         <li>
+           <a href="issues.html">
+             <i class='bx bx-folder' ></i>
+             <span class="links_name">Issues Faced</span>
+           </a>
+           <span class="tooltip">Issues Faced</span>
+         </li>
+         <li>
+           <a href="overcome.html">
+             <i class='bx bx-pie-chart-alt-2' ></i>
+             <span class="links_name">How To Overcome It</span>
+           </a>
+           <span class="tooltip">How To Overcome It</span>
+         </li>
+         <li>
+           <a href="talk.html">
+             <i class='bx bx-chat' ></i>
+             <span class="links_name">Need To Talk</span>
+           </a>
+           <span class="tooltip">Need To Talk</span>
+         </li>
+        </ul>
+      </div>
+      <script>
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+      closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();
+      });
+      searchBtn.addEventListener("click", ()=>{ 
+        sidebar.classList.toggle("open");
+        menuBtnChange(); 
+      });
+      function menuBtnChange() {
+       if(sidebar.classList.contains("open")){
+         closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");  
+       }else {
+         closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+       }
+      }
+      </script> 
+
+      <!-- home page -->
+       <section class="about">
+          <div class="about-content" style="height: 100%; margin-left:100px;">
+            <section class="info-section" style="display: flex; align-items: center; margin: 20px 0;">
+              <div class="info-image" style="flex: 1; padding-right: 20px;">
+                  <img src="https://cdn.pixabay.com/photo/2024/01/25/16/17/doctor-8532177_640.png" alt="Descriptive Alt Text" style="width: 350px; height: auto; margin-left:115px;">
+              </div>
+              <div class="info-content" style="flex: 2;">
+                  <h2>Welcome to Wellness Within:</h2>
+                  <p>Your informative text goes here. You can describe the image or provide any relevant information.</p>
+              </div>
+          </section>
+          </div>
+          <center><div class="container">
+              <div class="slider-wrapper">
+                <button id="prev-slide" class="slide-button material-symbols-rounded">
+                  ←
+                </button>
+                <ul class="image-list">
+                  <!-- image 1 -->
+                  <div class="image">
+                      <img class="image__img" src="https://cdn.pixabay.com/photo/2020/10/05/19/55/hamburger-5630646_640.jpg" alt="Burgers">
+                      <div class="image__overlay image__overlay--primary">
+                          <div class="image__title">Hamburgers</div>
+                          <p class="image__description">Hamurgers</p>
+                          <p class="image__description" style="font-size: 15px; width: 80%;">The hamburger is a quintessential American icon, embodying convenience, comfort, and cultural identity.</p>
+                      </div>
+                  </div>
+                  
+                  <!-- image 2 -->
+                  <div class="image">
+                      <img class="image__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5t8BUPoyQfwQHm9DNzzd0gJC53ptcayYYMg&s" alt="Apple Pie">
+                      <div class="image__overlay image__overlay--primary">
+                          <div class="image__title">Apple Pie</div>
+                          <p class="image__description">Apple Pie</p>
+                          <p class="image__description" style="font-size: 15px; width: 80%;">Apple pie is a symbol of American tradition and nostalgia, epitomizing the country's heritage and the concept of "home."</p>
+                      </div>
+                  </div>
+                  
+                  <!-- Image 3 -->
+                  <div class="image">
+                      <img class="image__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJtIk1dirjiumsZVMP-j7dupIZSBrT1T-uyg&s" alt="Barbeque">
+                      <div class="image__overlay image__overlay--primary">
+                          <div class="image__title">Bricks</div>
+                          <p class="image__description">Barbeque</p>
+                          <p class="image__description" style="font-size: 15px; width: 80%;">
+                              Barbecue is a cherished cuisine in the USA because it embodies regional pride, communal gatherings, and a rich tradition of slow-cooked, flavorful meats.</p>
+                      </div>
+                  </div>
+                  
+                  <!-- Image 4 -->
+                  <div class="image">
+                      <img class="image__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScdOk60kIeMkHPr2Cy4Vife6nXldrxbDyldQ&s" alt="Reuben sandwich">
+                      <div class="image__overlay image__overlay--primary">
+                          <div class="image__title">Reuben sandwich</div>
+                          <p class="image__description">Reuben sandwich</p>
+                          <p class="image__description" style="font-size: 15px; width: 80%;">The Reuben sandwich symbolizes America's cultural melting pot by blending diverse culinary traditions into a beloved comfort food staple.</p>
+                      </div>
+                  </div>
+                  
+                  <!-- Image 5 -->
+                  <div class="image">
+                      <img class="image__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrB6RxmaRBDm4hwoA8354FS8rdkdwQFFWaWA&s" alt="Hot God">
+                      <div class="image__overlay image__overlay--primary">
+                          <div class="image__title">Hot God</div>
+                          <p class="image__description">Hot Dog</p>
+                          <p class="image__description" style="font-size: 15px; width: 80%;">The hot dog epitomizes American culture as a quintessential symbol of casual dining, sporting events, and street food tradition.</p>
+                      </div>
+                  </div>
+                  
+                  <!-- Image 6 -->
+                  <div class="image">
+                      <img class="image__img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbjeGupzGgyFi5T1PI9-LF7AgrkB9mM-h4CRQ6CR4L09Xsc3_NOk4Z8GiPcMx3JEXmIxE&usqp=CAU" alt="Biscuits and gravy">
+                      <div class="image__overlay image__overlay--primary">
+                          <div class="image__title">Biscuits and gravy</div>
+                          <p class="image__description">
+                              Biscuits and gravy</p>
+                          <p class="image__description" style="font-size: 15px; width: 80%;">Biscuits and gravy represent the heart of Southern comfort food, showcasing the region's culinary traditions and hospitality.</p>
+                      </div>
+                  </div>
+      <style>
+          .image {
+              position: relative;
+              width: 300px;
+              height: 300px;
+          }
+          
+          .image__img {
+              display: block;
+              width: 100%;
+              height: 300px;
+          }
+          
+          .image__overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0, 0, 0, 0.6);
+              color: #ffffff;
+              font-family: 'Quicksand', sans-serif;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              opacity: 0;
+              transition: opacity 0.25s;
+          }
+          
+          .image__overlay--blur {
+              backdrop-filter: blur(5px);
+          }
+          
+          .image__overlay--primary {
+              background: #009578;
+          }
+          
+          .image__overlay>* {
+              transform: translateY(20px);
+              transition: transform 0.25s;
+          }
+          
+          .image__overlay:hover {
+              opacity: 1;
+          }
+          
+          .image__overlay:hover>* {
+              transform: translateY(0);
+          }
+          
+          .image__title {
+              font-size: 2em;
+              font-weight: bold;
+          }
+          
+          .image__description {
+              font-size: 40px;
+          }
+          .container {
+            max-width: 1200px;
+            width: 95%;
+            text-decoration: none;
+            margin-left: 110px;
+          }
+          .slider-wrapper {
+            position: relative;
+          }
+          .slider-wrapper .slide-button {
+            position: absolute;
+            top: 50%;
+            outline: none;
+            border: none;
+            height: 50px;
+            width: 50px;
+            z-index: 5;
+            color: #fff;
+            display: flex;
+            cursor: pointer;
+            font-size: 2.2rem;
+            background: #000;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            text-decoration: none;
+          }
+          .slider-wrapper .slide-button:hover {
+            background: #404040;
+          }
+          .slider-wrapper .slide-button#prev-slide {
+            left: -25px;
+            display: none;
+          }
+          .slider-wrapper .slide-button#next-slide {
+            right: -25px;
+          }
+          .slider-wrapper .image-list {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 18px;
+            font-size: 0;
+            list-style: none;
+            margin-bottom: 30px;
+            overflow-x: auto;
+            scrollbar-width: none;
+          }
+          .slider-wrapper .image-list::-webkit-scrollbar {
+            display: none;
+          }
+          .slider-wrapper .image-list .image-item {
+            width: 325px;
+            height: 300px;
+            object-fit: cover;
+          }
+          .container .slider-scrollbar {
+            height: 24px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+          }
+          .slider-scrollbar .scrollbar-track {
+            background: #ccc;
+            width: 100%;
+            height: 2px;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            position: relative;
+          }
+          .slider-scrollbar:hover .scrollbar-track {
+            height: 4px;
+          }
+          .slider-scrollbar .scrollbar-thumb {
+            position: absolute;
+            background: #000;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            height: 100%;
+            cursor: grab;
+            border-radius: inherit;
+          }
+          .slider-scrollbar .scrollbar-thumb:active {
+            cursor: grabbing;
+            height: 8px;
+            top: -2px;
+          }
+          .slider-scrollbar .scrollbar-thumb::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -10px;
+            bottom: -10px;
+          }
+          /* Styles for mobile and tablets */
+          @media only screen and (max-width: 1023px) {
+            .slider-wrapper .slide-button {
+              display: none !important;
+            }
+            .slider-wrapper .image-list {
+              gap: 10px;
+              margin-bottom: 15px;
+              scroll-snap-type: x mandatory;
+            }
+            .slider-wrapper .image-list .image-item {
+              width: 280px;
+              height: 380px;
+            }
+            .slider-scrollbar .scrollbar-thumb {
+              width: 20%;
+            }
+          }
+      </style>
+   </ul>
+                <button id="next-slide" class="slide-button material-symbols-rounded">
+                  →
+                </button>
+                <br><br>
+              </div>
+              <div class="slider-scrollbar" style="margin-top: -25px;">
+                <div class="scrollbar-track">
+                  <div class="scrollbar-thumb"></div>
+                </div>
+              </div>
+            </div></center>
+      <script>
+          const initSlider = () => {
+              const imageList = document.querySelector(".slider-wrapper .image-list");
+              const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+              const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+              const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+              const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+              
+              // Handle scrollbar thumb drag
+              scrollbarThumb.addEventListener("mousedown", (e) => {
+                  const startX = e.clientX;
+                  const thumbPosition = scrollbarThumb.offsetLeft;
+                  const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+                  
+                  // Update thumb position on mouse move
+                  const handleMouseMove = (e) => {
+                      const deltaX = e.clientX - startX;
+                      const newThumbPosition = thumbPosition + deltaX;
+                      // Ensure the scrollbar thumb stays within bounds
+                      const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+                      const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+                      
+                      scrollbarThumb.style.left = `${boundedPosition}px`;
+                      imageList.scrollLeft = scrollPosition;
+                  }
+                  // Remove event listeners on mouse up
+                  const handleMouseUp = () => {
+                      document.removeEventListener("mousemove", handleMouseMove);
+                      document.removeEventListener("mouseup", handleMouseUp);
+                  }
+                  // Add event listeners for drag interaction
+                  document.addEventListener("mousemove", handleMouseMove);
+                  document.addEventListener("mouseup", handleMouseUp);
+              });
+              // Slide images according to the slide button clicks
+              slideButtons.forEach(button => {
+                  button.addEventListener("click", () => {
+                      const direction = button.id === "prev-slide" ? -1 : 1;
+                      const scrollAmount = imageList.clientWidth * direction;
+                      imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+                  });
+              });
+               // Show or hide slide buttons based on scroll position
+              const handleSlideButtons = () => {
+                  slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
+                  slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
+              }
+              // Update scrollbar thumb position based on image scroll
+              const updateScrollThumbPosition = () => {
+                  const scrollPosition = imageList.scrollLeft;
+                  const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+                  scrollbarThumb.style.left = `${thumbPosition}px`;
+              }
+              // Call these two functions when image list scrolls
+              imageList.addEventListener("scroll", () => {
+                  updateScrollThumbPosition();
+                  handleSlideButtons();
+              });
+          }
+          window.addEventListener("resize", initSlider);
+          window.addEventListener("load", initSlider);
+      </script>
+       </section>
+</body>
+</html>
