@@ -76,6 +76,136 @@
       <!-- How to overcome it page -->
       <center> 
       <section class="overcome" style="height: 100vh;">
-        
+        <style>
+          body {
+              font-family: sans-serif;
+              margin: 0;
+              padding: 0;
+              background-color: #A0C878; /* Light gray background */
+              display: flex;
+              justify-content: center; /* Horizontally center content */
+              align-items: center; /* Vertically center content */
+          }
+  
+          .grid-container {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+              grid-gap: 20px; /* Spacing between grid items */
+              width: 80%; /* Occupy 80% of the container width */
+              max-width: 100%; /* Set a maximum width */
+              margin-right: 90px;
+          }
+  
+          .grid-item {
+              background-color: #fff; /* White background for items */
+              border-radius: 8px; /* Rounded corners */
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+              overflow: hidden; /* Hide content that overflows (for images) */
+              width: 350px; 
+          }
+  
+          .image-area {
+              background-color: #eee; /* Light gray for image placeholders */
+              height: 200px; /* Fixed height for image area */
+              display: flex;
+              justify-content: center;
+              align-items: center;
+          }
+  
+          .image-area span {
+              font-size: 24px;
+              color: #999; 
+          }
+
+          .image-area img{
+            width: 350px;
+            height: 200px;
+          }
+  
+          .text-area {
+              padding: 20px;
+          }
+  
+          .text-area h3 {
+              margin-top: 0;
+              margin-bottom: 10px;
+          }
+          .overcome-btn{
+            text-decoration: none;
+          }
+      </style>
+  </head>
+  <body>
+    <center>
+      <br><hr style="height: 10px; border: 1px solid #A0C878">
+      <div class="grid-container">
+          <div class="grid-item">
+              <div class="image-area">
+                <div class="image-area">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZn86XkLbrDXFXOLiRhlKD_1s3D9p0Kg_cvVZaD8boRXq5c2Hmls-NlfOpqhQmMCM1YSs&usqp=CAU" alt="Image Description">
+              </div>
+              </div>
+              <div class="text-area">
+                  <h3>Solution 1</h3>
+                  <a href="" class="overcome-btn">Learn More</a>
+              </div>
+          </div>
+          <div class="grid-item">
+              <div class="image-area">
+                <div class="image-area">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCHwhstHlViKiJsSl_m1wWuTlzg9chn7pn19HqCOrmafnBe_4EtskU3xAv8xTibztlXBw&usqp=CAU" alt="Image Description">
+              </div>
+              </div>
+              <div class="text-area">
+                  <h3>Solution 2</h3>
+                  <a href="" class="overcome-btn">Learn More</a>
+              </div>
+          </div>
+          <div class="grid-item">
+              <div class="image-area">
+                <div class="image-area">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlGl1FkxC81AzFAFfTIobdPfurCo2OWpeg2BIQ5brhSFhAF7vl6RK8SKoK7YwMyui8rp4&usqp=CAU" alt="Image Description">
+              </div>
+              </div>
+              <div class="text-area">
+                  <h3>Solution 3</h3>
+                  <a href="" class="overcome-btn">Learn More</a>
+              </div>
+          </div>
+          <div class="grid-item">
+              <div class="image-area">
+                <div class="image-area">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHy9msQ4NHYbiIzfH4vX6MDiN-s0sqQYXNXwb4lLQmOEq090VjdHaK2nZAEFJlfyTNWGs&usqp=CAU" alt="Image Description">
+              </div>
+              </div>
+              <div class="text-area">
+                  <h3>Solution 4</h3>
+                  <a href="" class="overcome-btn">Learn More</a>
+              </div>
+          </div>
+          <div class="grid-item">
+              <div class="image-area">
+                <div class="image-area">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8duUOub2R1Bvuvl4y33LQ2rK2tkWueUGioc0lr2SZ84JsRPLnspxyC5833sjWaKCsoaY&usqp=CAU" alt="Image Description">
+              </div>
+              </div>
+              <div class="text-area">
+                  <h3>Solution 5</h3>
+                  <a href="" class="overcome-btn">Learn More</a>
+              </div>
+          </div>
+          <div class="grid-item">
+              <div class="image-area">
+                <div class="image-area">
+                  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAvAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAACAQMEBQYABwj/xAA7EAABBAECBAQDBgQEBwAAAAABAAIDEQQFIRIxQVEGE2FxIjJCFIGRobHBB1Ji0SSCsuEVI0OiwvDx/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAEDAgQF/8QAJREAAgIBBAEEAwEAAAAAAAAAAAECEQMEEiExIgUTQVEyYbFS/9oADAMBAAIRAxEAPwD0PgNdF3COv6J8tB9knAAuc6CO6Mc6FeoXeUU85hJHZKQeiAIpaL2r2pIQT0b67KUW9/vQ+X6gJgRfLo7DbsAkc0FpG59OylFoA7+yadw0S6x7IsDNGIu1OdtAbjrfRWbMS6AbeynY2msbLJlOeSZKpnbZGcpkbixwAUHHk7fctJIy+tYTmMJYwEnosRqUPBlMJ2PFuvUMx0TyOI3vaz+taPHlxB8JAkjPE0O6+i3jltZppuJXaYxxjaRw13LVbNY7h3e1v+Xmpuh+GsuaGOTK/wANHVhp3cfu6K/b4dwWgcXmvPW30PyV2cbkjIFxscIvfsU3J5j3bHh92Wts/RMIt4Wxub6h26hy+H2b+TNW31N/skLcjEGJwJc8Nc/lVFBDiPfJbgKHRaDP0zKxyeOAFp+tp4gkbieWxtDosTlSOjElJlLNCAxw22Wc1F1EgrW57Q1rumyx2puAe6+qzj7Lz6KDPcN1XcypWa/ikoJqNllejBVE8vK7lQjWWj4FIbHsl4E7M0fSvCRzpJXsUX1d0pvtS88oNuHoUPCU45BTe+6AAdQKF/PkjKEtJNi/W0ABVJAOJ3DzCIhFHwtBde6GzUexZvgj7LPZ/wAxLTZVvmTgirAVFmytYHOvdYZ1Yo82V8skz5Y4ow573u4WgcyVsdF0Y40bJM3hfkDkObWf7qD4MxWyNm1CQAuLuCM18velpJpGRQvkkPCxgLney1GK+TGfNJvZEGV8cTOKRzWMHNziokOp4WQ5zYcljy3nVrG6tqkuozl8jiIgfgj6N/3Qaec2Fkk+LGJGmmm97WZZK6OhenVj3TfJvg5rx8Dmn2KBwVVizSsZHI4cLy0cTfVRdf8AFePpTGtjgfPO4WWiw1noT39AqYJPNLauzgy4/bLxwH/1Q8jBhlBLW8Lj26rBv/iBqTZL+y4rm/y/EPzW6wtQZlRR8bSyRzQ6r2PsV05dLkgvJEI6iKa5KPU9JMrS0HhPusN4m8O5bYy+BzXEC+EnmvWsmLzIzw7OA2WU11j3w2TQGxC5a2Pg9CE96pniYY7jIfYcOYPRSoIrUvVYODU5BQ33RwR0OS7t1o43CmA2MgckJj3UuqQltlZsdH0SRaEhEaQlcQAlAW7oyChJTAEtpA4IjY3tBxO5Nbfe+iABfs010FqszcuRsVxqzkFROqiTtsoGpxthxXbC65rEzow0uzKS6pO7KMbfq79FJZjHKAd5pc0mrH1HsO6j6XpmRqmpObHjmSCNvE977DHO6AnrW+y3mmaNHhuE80nnZAFNNU1g7Nb09+aFFsvlzRgh7RsMYGmw44FEC3D1O5TmpMbJhSse3ia4AOHcWpSCZnHE5ncKklxR56l52zFnRRJnSF7GtxSPg4XbhWmLjR4cAhiJLQSeI8zaeIIJaeY5pqaeOEAzSNjBNAuNWeyjpoPJOmrR06/VT9utwRPW6XnupanqOoPOJlMvH87i4gzer239l6C5zA0ue4NaBZceQCx2r42PivibjS+YHN4ibsDfZdvGCTnFW/4S9NS1T9ubfH67+7Mi+Dzs9mLjBxMkgYwHbmaW+0fS8jTIpY58x+SHOBju/gAFKk04wx6njyzBobG6y4j5ditkXB7Q4OBaRYIWsvqiaUXEer9JnGXEuC1xJfPx2vPzcne6pNdj8uWSuT2cQ/Q/t+KttLHDjkH+c/oFSeL8h0WThxN5zRyb9gC3+6hJqStGdNGUWoy7PNfEuMGZzZB1G6gxNsgK88RsjZj/AAu3vrzKqI2j5vVUxvxK5o1I4sFoCwWnnAXshLT/AClUInvxPcbISR9ITlit0LnNHILjEAbQkI+PbkhLgmANb7pCWhdxA80JLL+Y32pAAFwLq6c1nfEmoNYXxteOVkWrfVcxmLjue4UaoBeY+JNSfMZBHZf0Kz2ztwQ8bZ6t4R1PD1TQsebB4QGDy5IxzjeOYP3q4Xjv8Goslmu5UbpHMZHEZHtuhJewFdaO9+y9iVmqdHFkVSOXLlyRMofE+j5WXH9o0vKkx8tg+UO+GQdq5LzPUtV1SX/CamQ/yZA4xyxi7Hfa6XtRWd8V+G4Nbx3SMAjzWt/5cgHzehXbpNRHG9s1wSy49/JlMDW8nxBDJp8eLHC8M4i9rzw0CNq9VMbo3l6ZOJYWSZR+Tges5oGjZuR9qfHlOwjFK2OQcro2QT6fuvQI2TTV5UT3f1O+Efmt6vFhU7RnT6rPjj7ePq7Mpo2mMyXzjNjkaGiqILTa0scduZBEz4iKA6Ad1OZpkrviyJ+AHm2Nv/kf2AUyHHix28MDA0Hf1PuV5MtOnK74PVya/JmVyVCY8Qhhay7rr3WV8QEZniaGAbjGxrd6F5uvwaFqp5o4YpJZnBrI2lznE1QG5WJ8N5P/ABSfM1R9N+0PJaOzPpH4K0uETwK5ORlvGDKzIIQAGkkkD0VU0AbVt2Vn4pfxa029qYaH3qC1za35qmP8TWbmR1NbuRugMjb5pXMtNmM3sFske/8ARNnmitC4A9apchgFJQ6JduiEkJgCWDpaTh/9KIH1QmygDI+Io9Uysh8UGJIW2acPlr3WIz2y4Jc6VomDt3NqiD6Fewu50bNrznW4WSmUNFcJIJWemd+HJvVfQ5/C2PE1bW5c8TviycJtNxm00ua4USe7f3C9YXgHgXStRyPGmK7TuOJsL/MmlHJkfW/flS9/HL71eSS6OHLKTl5HLly5ZJHISendLaEoGV8emQx5k04aOGR/mcP9e1k/gpvIUOSUoXFNtvsKoElNuO9d9krisf8AxA1ibFx4tLwXFuTltPG8HdkfI16n+6DcIuToov4g+K4srHyNJ093FGLbkzA7O/oHf1Kl+D3xxaSzgF8Tf2XnupRCBgx21xVblsfBmc06aIXEcUeyzk/GzvxRUXtMz4rkkOtOaCQQOYUSDJkbs8BymeIh5uuzFu4DQq99NB7qsXUUTmrkyzjkEmwO6MgA1RP3qBG0yxdQe4KDzslnw0011K1FknBro+hSAOSA33S+6QlcxE6/RcSOyQXzPJcaQAlitwEDnmtkpG92hJHdADbnEndY/VsBsGpkFvFFKeNoI69R+K1zz1BtVesQfasRzQD5rDxMPr2/BKStFsM9siX4LZCzEyhGxrZDLb6G9VstGvP9Py8vTYxqMDGyNcz443OovH7K2Hj3R2YrZsrz4b2IEfGL92pxdoM+KW7cujVJCVlsbx9oOVvBLkua13C4/ZnivfrS0rJGyxtexwcxwtpHIhbOdxa7CJSFckKBCFA4oiU24oABxrqvNvFD78RZ2W47RNbC2+jWtv8AVxXo7ua8X8Uak2TUsmFr93yvLvxITpvo6MHDbKDKkfkZUkp5E7I8fKnxnh0EhYTz9U4QwMriBTLaLt+i38UW5uySHue50ryS553XCPjc70RRtFVaXgIOxpIZ0TTGaqwnq9ELX0NyCEvmjosj4Pdi6tkN3yNJOInmkN9CPuUzjCN18yTauZQ+71xI7oEIgfXVGSPdBY6CkANmumyZfW5IcU84AlMyg8Ng0BsmMpZWND5cctLWPJeyunf8/wBVivEel5OE+Z0A44JBxFvS/T1W9y4WyuFkWHXY2TeowwnGMZp23uQsWoyO7G90aPOtHc6KcZsb6mcSWx3sRtYIXtehzedo+DLw8PHAx1drAXkLvC+U1/2yKXypHPLmw1fw+vvzXqfhJzz4dwWSkcccZjdXdpI/sqWn0R1Caii4SErjshJTOMRxTbkRKbcUx0A81v2XzXqU8kmp5j3PsnIk/wBRpfSTjsV85Z2IftuV8P8A13/6irYq+Qab6IrciUDZyJuVI02437ITE5p3aUhZYVqixOU0WOPmj+YWpzMhr28gs7RG4TjMh7eZWHi+isc/+i8Lq5JeMKthzLPdSftDTuRupuNFlJPo+grLhzC669UyHdA5qUHvuuYgHsTZC66QWPZLY7oAOwg5BCS4dQQlu0xC7c901LRaeyc37pt/KkDK7NY4xP8ALFPr4fdZo508chEzHNff1bLWyX0VZlQtksSND7vmFlxTL48u1UDgTxOaDIQSQpeLqzNJDi+347zZaNy09wqGTE8p5MLyKOzSdlFyXOcSyUUTzorNNF90Jqmeg6frWnakP8HlRvcBuy6cP8p3U4kdwvFMrCd5wfGaINh24IPurfTPEer6eOE5H2mMfROOL8+asjllhrpnqNoCVl9O8bYc1M1CGTFd/P8AM38RuPwV/iZuLmx8eHkwzt6mNwdSZNxaHivEtVx2warmtNbTvH/cV7aee97c14x4qex2taiYnBzXTuojkmUw9sgSYjHe1cwosum3u0KfhOJYWu6hSnBhaKCNzRdwT7MvPhvadgocjC00RS0+Qz4xtShz4rXDcBWhl+znnhT6KEbIhM8CgVKmwnNstP3KK6JwJBaVe00czUon0ZfZcCR1UfiFIg8d159FyRxepS/TdhMB+2zkXGO6KEOgjo6kdtuxdeiba/bddxC6AQA7YrYFA4/CV2wFIXIQDMnIqJKpb6rumJKLiC380GkVc7W8W46KvcPM2DRt6qzm+ag086Kr52AOAHTomaIU7DwmxsoMza5C1ZTA8R3btSiysJNGiD6poZXuD/ShzbSBg8qQS40z4Ze7bFJyaMtcadXsmH8dfSPuWqFdD+VrerzRGF2oZFAURxc1ROZR3+8qxediHHZRJWdRRHuiikZoWGVrflTgl2tQxV7OXSP4RRKVFLJEh4jumZPlUfzt0jpVpIy2OENc3dR3MbZoBL5iTzFtE2eu8buG7KkRk8IXLlAmx5hTjnloFLlyDIgkceZRxvJu+i5ckMIOJHNKHkkggJFyBCO3Cjy7cRHZcuQNFfMOKr7qHKwca5cg2RZN3utRXmnbALly0BEcA4utQ5gkXLaAaeFHl25Lly0hEWZo4SeqhlxOxK5cmxxG3EpLKRchDYtrid0i5aEz/9k=" alt="Image Description">
+              </div>
+              </div>
+              <div class="text-area">
+                  <h3>Solution 6</h3>
+                  <a href="" class="overcome-btn">Learn More</a>
+              </div>
+          </div>
+      </div>
+    </center>
       </section>
 </html>
